@@ -1,0 +1,130 @@
+body {
+    background: url(../img/bg.jpg);
+}
+.header {
+    &-thx {
+        text-transform: uppercase;
+        color: #fff;
+        text-shadow: 1px 1px 10px #000;
+        margin-top: 25%;;
+    }
+    &-box {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        overflow: auto;
+        white-space: nowrap;
+        text-align: center;
+        &:before {
+            height: 100%;
+            display: inline-block;
+            vertical-align: middle;
+            content: '';
+        }
+        &_block {
+            display: inline-block;
+            white-space: normal;
+            vertical-align: middle;
+            text-align: left;
+        }
+    }
+    &-button {
+        margin-left: 7rem;
+        margin-bottom: 3rem;
+        padding: 3rem 5rem 3rem 5rem;
+        border-radius: 50px;
+        border-style: solid;
+        border-color: #fff;
+        background-color: rgba(0,0,0,.8);
+        color: #fff;
+        text-transform: uppercase;
+        outline: none;
+        &:hover {
+            background-color: rgba(255,81,66,.8);
+            color: #000;
+            transition: all 0.5s;
+            border-color: #000;
+        }
+    }
+    &-img {
+        width: 300px;
+        &_box {
+            &:hover {
+                box-shadow: 1px 1px 10px rgb(255,81,66);
+            }
+        }
+    }
+}
+input, button {
+    outline: none;
+}
+.modal {
+    &-content {
+        background-color: rgba(255,81,66,.7);
+    }
+    &-title {
+        color: #fff;
+        text-transform: uppercase;
+        font-size: 3rem;
+        text-align: center;
+    }
+    &-header {
+        border: none;
+    }
+    &-footer {
+        border: none;
+    }
+}
+button.close {
+    display: none;
+}
+.btn {
+    &-submit {
+        padding: 1rem 2rem 1rem 2rem;
+        border-radius: 50px;
+        border-style: solid;
+        border-color: #fff;
+        background-color: rgba(0,0,0,.8);
+        color: #fff;
+        text-transform: uppercase;
+        outline: none;
+        &:hover {
+            background-color: rgba(255,255,255,.8);
+            color: #000;
+            transition: all 0.5s;
+            border-color: #000;
+        }
+    }
+    &-close {
+        padding: 1rem 2rem 1rem 2rem;
+        border-radius: 50px;
+        border-style: solid;
+        border-color: #fff;
+        background-color: rgba(0,0,0,.8);
+        color: #fff;
+        text-transform: uppercase;
+        outline: none;
+        &:hover {
+            background-color: rgba(255,81,66,.8);
+            color: #000;
+            transition: all 0.5s;
+            border-color: #000;
+        }
+    }
+}
+.form-login, .form-pass {
+    outline: none;
+    height: 4rem;
+}
+.form-control:focus {
+    border-color: #888;
+    box-shadow: none;
+}
+.cd {
+    &-btn {
+        color: none;
+        border: none;
+    }
+}
